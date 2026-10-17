@@ -1,0 +1,28 @@
+# Your real, filled-in data — keep it out of version control.
+profile/preferences.json
+profile/candidate.md
+profile/resume*
+
+# Ledger backups and scratch output
+*.bak
+*.tmp
+drafts/
+outreach/drafts-*.md
+
+# Secrets and environment
+.env
+.env.*
+*.key
+*.pem
+credentials*
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python cache (if you add helper scripts)
+__pycache__/
+*.pyc
