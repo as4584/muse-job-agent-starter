@@ -77,7 +77,7 @@ companies.jsonl        One row per target company
 contacts.jsonl         One row per person profiled
 applications/          submitted.jsonl: one row per application
 outreach/              steps.jsonl: one row per planned follow-up touch
-docs/          FILTER.md, CADENCE.md, TRACKER.md, SAFETY.md
+docs/          FILTER.md, CADENCE.md, TRACKER.md, SAFETY.md, METRICS.md
 examples/      A fully worked fictional example
 ```
 
