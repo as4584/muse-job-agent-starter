@@ -13,7 +13,8 @@ In the `profile/` folder:
 - Copy `candidate.template.md` and rename the copy to `candidate.md`.
 
 The ledgers (`companies.jsonl`, `contacts.jsonl`,
-`applications/submitted.jsonl`, `outreach/steps.jsonl`) each contain
+`applications/submitted.jsonl`, `outreach/steps.jsonl`,
+`tasks.jsonl`, `schedule.jsonl`) each contain
 one example line with fake data, marked `"_example": true`. Delete
 that line when you add your first real record. Each example line shows
 every field the system expects.

@@ -12,16 +12,48 @@ records your assistant works from.
   one-line reason it ranks first, plus today's time blocks and your
   next few deadlines.
 - **Tasks**: everything open, ranked highest to lowest. Each row shows
-  its score and why.
-- **Jobs**: one card per application, with company, role, pay,
-  status, the date you applied, and the next cadence touch due.
+  its score and why. Rows live in `tasks.jsonl`.
+- **Outreach**: one card per application, built for the question
+  "where does this application actually stand with the humans?" Each
+  card shows three dates across the top: the date the application was
+  submitted, the date first contact was made with a person at the
+  company, and the interview date once one is set. Under the role it
+  names the two people profiled for that company, the recruiter and
+  the hiring manager, plus company, role, pay, status, and the next
+  cadence touch due. A date stays blank until the real event happens;
+  it is never backfilled with a guess. At the top, the view totals
+  the pipeline: applications submitted, first contacts made,
+  interviews set, and how many roles have both people named.
 - **Schedule**: your day and week, with protected blocks (classes,
   shifts, study time) shown as walls that work is planned around,
-  never over.
+  never over. Blocks live in `schedule.jsonl`.
 - **Money** (optional): what is actually available now, what is
   coming and when, and any long-term target you are working toward,
   shown only from numbers that were verified, never estimated into
   existence.
+
+## Where the Outreach dates come from
+
+- **Application date** is `date_submitted` in
+  `applications/submitted.jsonl`, recorded from the portal's own
+  confirmation at the moment the application goes in.
+- **First contact date** is `first_contact_date` on the same row. It
+  is set on the day the first cadence step for that application is
+  actually sent (a connection request with a note, an intro email, or
+  a first message after a connection is accepted), and it must match
+  a `sent` row in `outreach/steps.jsonl`. A drafted or approved step
+  does not count.
+- **Interview date** is `interview_date` on the same row, set only
+  when an interview is actually scheduled, with the time and place
+  recorded in the row's notes.
+- **The two people** on each card come from `contacts.jsonl`, matched
+  on `company_id`, one `recruiter` and one `hiring_manager`. If a
+  person is named but has no public contact channel, the card says so
+  plainly instead of inventing one. A guessed email stays marked
+  unverified and generates no steps.
+- When a reply, a rejection, or an interview stops the cadence, the
+  card reflects it the same day, because the board reads the same
+  ledgers the assistant works from.
 
 ## How tasks are ranked
 

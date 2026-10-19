@@ -77,9 +77,17 @@ companies.jsonl        One row per target company
 contacts.jsonl         One row per person profiled
 applications/          submitted.jsonl: one row per application
 outreach/              steps.jsonl: one row per planned follow-up touch
-docs/          FILTER.md, CADENCE.md, TRACKER.md, SAFETY.md, METRICS.md
+tasks.jsonl            One row per open task, ranked for the board
+schedule.jsonl         One row per protected or scheduled block
+docs/          FILTER.md, CADENCE.md, TRACKER.md, SAFETY.md, METRICS.md,
+               AGENT_BUILD_BRIEF.md
 examples/      A fully worked fictional example
 ```
+
+Sharing this repo with a friend? Point their assistant at
+`docs/AGENT_BUILD_BRIEF.md`. It is a step by step build spec written
+for the receiving agent, so their Muse can set the whole system up,
+board included, from these files alone.
 
 ## The rules that keep it honest
 
