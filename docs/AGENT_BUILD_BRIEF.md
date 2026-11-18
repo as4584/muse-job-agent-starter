@@ -16,7 +16,10 @@ overrides it.
    every applicant tracking system, account portal, job board, and
    direct channel this system can apply through, with the board and
    API patterns for each.
-5. `examples/jamie-rivera/` as the reference implementation. Every
+5. `docs/RESUME.md` for how resumes get built: the facts inventory,
+   claim states, the Problem, Fit, Solution frame, the format lock,
+   and the STAR pass every bullet goes through before the QA gate.
+6. `examples/jamie-rivera/` as the reference implementation. Every
    person, company, and date in that folder is fictional, and it
    shows what a correctly filled system looks like.
 

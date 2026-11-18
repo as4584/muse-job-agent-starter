@@ -11,6 +11,11 @@ files you own and can read.
 - **Discovery sweeps.** Your assistant searches for fresh postings that
   match the roles you want, and verifies each posting is still open
   before it counts.
+- **A proof-first resume system.** One master resume built from a
+  verified facts inventory, tailored per application with the
+  Problem, Fit, Solution frame, and every bullet built with the
+  STAR method and ordered result-first. No summary, no objective,
+  no claim without evidence. See `docs/RESUME.md`.
 - **A platform catalog.** Most postings live on a handful of applicant
   tracking systems with public boards and public APIs.
   `docs/PLATFORMS.md` and `platforms.jsonl` list every platform and
@@ -89,7 +94,7 @@ outreach/              steps.jsonl: one row per planned follow-up touch
 tasks.jsonl            One row per open task, ranked for the board
 schedule.jsonl         One row per protected or scheduled block
 docs/          FILTER.md, CADENCE.md, TRACKER.md, SAFETY.md, METRICS.md,
-               PLATFORMS.md, AGENT_BUILD_BRIEF.md
+               PLATFORMS.md, RESUME.md, AGENT_BUILD_BRIEF.md
 examples/      A fully worked fictional example
 ```
 
