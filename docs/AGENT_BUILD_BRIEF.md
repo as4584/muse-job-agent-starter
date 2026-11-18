@@ -12,7 +12,11 @@ overrides it.
 2. `docs/SAFETY.md` for the gates you must never cross.
 3. `docs/FILTER.md`, `docs/CADENCE.md`, `docs/TRACKER.md`, and
    `docs/METRICS.md` for the working rules.
-4. `examples/jamie-rivera/` as the reference implementation. Every
+4. `docs/PLATFORMS.md` and `platforms.jsonl` for where jobs live:
+   every applicant tracking system, account portal, job board, and
+   direct channel this system can apply through, with the board and
+   API patterns for each.
+5. `examples/jamie-rivera/` as the reference implementation. Every
    person, company, and date in that folder is fictional, and it
    shows what a correctly filled system looks like.
 
@@ -34,6 +38,13 @@ record per line with keys sorted:
 
 - `companies.jsonl`: one row per target company.
 - `contacts.jsonl`: one row per person profiled.
+- `board-registry.jsonl`: one row per company board a sweep reads,
+  with its ATS id from `platforms.jsonl`, board slug, and board URL.
+  Seed it from the careers pages of the companies in
+  `companies.jsonl`, following `docs/PLATFORMS.md`.
+- `platforms.jsonl`: ships filled in; it is the platform catalog,
+  not your human's data. Add a row only when a sweep or an
+  application meets a platform it does not list.
 - `applications/submitted.jsonl`: one row per application, including
   `date_submitted`, `first_contact_date`, and `interview_date`.
 - `outreach/steps.jsonl`: one row per planned cadence touch.

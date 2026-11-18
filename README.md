@@ -11,6 +11,13 @@ files you own and can read.
 - **Discovery sweeps.** Your assistant searches for fresh postings that
   match the roles you want, and verifies each posting is still open
   before it counts.
+- **A platform catalog.** Most postings live on a handful of applicant
+  tracking systems with public boards and public APIs.
+  `docs/PLATFORMS.md` and `platforms.jsonl` list every platform and
+  channel the system can work: where each board lives, the API a
+  sweep calls, and how applying through it actually works, so the
+  assistant never has to guess where a job lives or how a submission
+  happens. `board-registry.jsonl` holds the company boards you sweep.
 - **A "worth-it" filter you configure.** Pay floor, commute distance,
   schedule conflicts, degree walls, reference walls, and other hard
   rules you set. A job that fails any rule is killed with the reason
@@ -75,12 +82,14 @@ a fictional job seeker lives in [examples/jamie-rivera](examples/).
 profile/       Your preferences and candidate facts (templates included)
 companies.jsonl        One row per target company
 contacts.jsonl         One row per person profiled
+platforms.jsonl        The catalog of job platforms and channels (reference data)
+board-registry.jsonl   One row per company board a sweep reads
 applications/          submitted.jsonl: one row per application
 outreach/              steps.jsonl: one row per planned follow-up touch
 tasks.jsonl            One row per open task, ranked for the board
 schedule.jsonl         One row per protected or scheduled block
 docs/          FILTER.md, CADENCE.md, TRACKER.md, SAFETY.md, METRICS.md,
-               AGENT_BUILD_BRIEF.md
+               PLATFORMS.md, AGENT_BUILD_BRIEF.md
 examples/      A fully worked fictional example
 ```
 

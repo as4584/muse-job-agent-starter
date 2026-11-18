@@ -14,7 +14,7 @@ In the `profile/` folder:
 
 The ledgers (`companies.jsonl`, `contacts.jsonl`,
 `applications/submitted.jsonl`, `outreach/steps.jsonl`,
-`tasks.jsonl`, `schedule.jsonl`) each contain
+`tasks.jsonl`, `schedule.jsonl`, `board-registry.jsonl`) each contain
 one example line with fake data, marked `"_example": true`. Delete
 that line when you add your first real record. Each example line shows
 every field the system expects.

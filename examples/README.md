@@ -7,6 +7,7 @@ complete, working configuration before you write your own:
 - `jamie-rivera/profile/preferences.json` — a filled preferences file.
 - `jamie-rivera/profile/candidate.md` — a filled candidate profile.
 - `jamie-rivera/companies.jsonl`, `contacts.jsonl`,
+  `jamie-rivera/board-registry.jsonl`,
   `applications/submitted.jsonl`, `outreach/steps.jsonl` — one small
   pipeline, mid-cadence: Jamie applied to two jobs on Mon Oct 5, 2026,
   Day 1 touches are sent, Day 3 follow-ups are drafted and waiting for
